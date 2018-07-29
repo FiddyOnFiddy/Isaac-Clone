@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float movementSpeed;
 
+    public Vector2 moveVelocity;
+        
+
 
     // Use this for initialization
     void Start ()
@@ -19,12 +22,18 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        moveVelocity = moveInput.normalized * movementSpeed;
+
+    }
+
+    private void FixedUpdate()
+    {
         Movement();
-	}
+    }
 
     public void Movement()
     {
-        rb.velocity = new Vector2(Input.GetAxis("Horizontal") * movementSpeed * Time.fixedDeltaTime * 10, Input.GetAxis("Vertical") * movementSpeed * Time.fixedDeltaTime * 10);
-
+        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
     }
 }
