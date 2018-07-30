@@ -106,9 +106,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tear: {fileID: 1233512182703364, guid: 606b150fff401e849a3b0dd711a24afd, type: 2}
   rb: {fileID: 0}
-  shootDirection: {x: 0, y: 0}
   tearDelay: 0.5
-  isShooting: 0
+  defaultTearDelay: 0
+  force: 500
+  movementForce: 30
 --- !u!114 &114820339878208302
 MonoBehaviour:
   m_ObjectHideFlags: 1

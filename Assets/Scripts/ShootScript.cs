@@ -6,19 +6,21 @@ public class ShootScript : MonoBehaviour
 {
     public GameObject tear;
     public Rigidbody2D rb;
-    public Vector2 shootDirection;
 
     public float tearDelay;
     public float defaultTearDelay;
 
-    public bool isShooting = false;
+    public float force = 500;
+    public float movementForce = 15;
 
-    public int shootDir = 0;
+
+    private PlayerMovement playerMovement;
 
     // Use this for initialization
     void Start ()
     {
         rb = tear.GetComponent<Rigidbody2D>();
+        playerMovement = GetComponent<PlayerMovement>();
 
         defaultTearDelay = tearDelay;
 	}
@@ -34,30 +36,29 @@ public class ShootScript : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.UpArrow) && tearDelay <= 0)
         {
-            SpawnTear();
-            shootDir = 1;
+            SpawnTear(Vector2.up);
         }
         else if (Input.GetKey(KeyCode.DownArrow) && tearDelay <= 0)
         {
-            SpawnTear();
-            shootDir = 2;
+            SpawnTear(Vector2.down);
         }
         else if (Input.GetKey(KeyCode.RightArrow) && tearDelay <= 0)
         {
-            SpawnTear();
-            shootDir = 4;
+            SpawnTear(Vector2.right);
     
         }
         else if (Input.GetKey(KeyCode.LeftArrow) && tearDelay <= 0)
         {
-            SpawnTear();
-            shootDir = 3;
+            SpawnTear(Vector2.left);
         }
     }
 
-    void SpawnTear()
+    void SpawnTear(Vector2 shootDirection)
     {
-        Instantiate(tear, transform.position, Quaternion.identity);
+        GameObject clone = Instantiate(tear, transform.position, Quaternion.identity);
+        Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
+        rb.AddForce(shootDirection * force * Time.fixedDeltaTime, ForceMode2D.Impulse);
+        rb.AddForce(playerMovement.moveVelocity * movementForce * Time.fixedDeltaTime, ForceMode2D.Impulse);
         tearDelay = defaultTearDelay;
     }
 }
