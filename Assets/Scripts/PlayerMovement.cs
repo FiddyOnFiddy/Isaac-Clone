@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
 
     public float movementSpeed;
-
     public Vector2 moveVelocity;
         
 
@@ -34,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Movement()
     {
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+        rb.AddForce(moveVelocity * 500 * Time.fixedDeltaTime);
+        
     }
 }
