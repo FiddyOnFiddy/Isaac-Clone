@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 114820339878208302}
   - component: {fileID: 50443851585031958}
   - component: {fileID: 114535651119449246}
+  - component: {fileID: 61403006234994706}
+  - component: {fileID: 114157627706390304}
   m_Layer: 0
   m_Name: PC Computer - The Binding of Isaac Rebirth - Isaac_12
   m_TagString: Player
@@ -53,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1573615981504820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.42, y: -1.03, z: 0}
+  m_LocalPosition: {x: -2.99, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4652891088831128}
@@ -93,6 +95,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!61 &61403006234994706
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1573615981504820}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.875, y: 0.78125}
+    newSize: {x: 0.875, y: 0.78125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.875, y: 0.78125}
+  m_EdgeRadius: 0
+--- !u!114 &114157627706390304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1573615981504820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94de05dd1b719f044b11bdafe939e06b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 6
+  heartContainers: 6
+  damage: 10
+  shotSpeed: 10
+  tearDelay: 10
+  range: 10
+  speed: 10
+  luck: 10
 --- !u!114 &114535651119449246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,7 +155,7 @@ MonoBehaviour:
   tearDelay: 0.5
   defaultTearDelay: 0
   force: 500
-  movementForce: 30
+  movementForce: 20
 --- !u!114 &114820339878208302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,6 +170,10 @@ MonoBehaviour:
   rb: {fileID: 0}
   movementSpeed: 8
   moveVelocity: {x: 0, y: 0}
+  canvas: {fileID: 0}
+  halfHeartContainer: {fileID: 21300000, guid: 32c37fa389c69bc4996b283cafafe893, type: 3}
+  heartContainer3: {fileID: 0}
+  heartContainers: []
 --- !u!212 &212332439557832664
 SpriteRenderer:
   m_ObjectHideFlags: 1
