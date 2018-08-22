@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94de05dd1b719f044b11bdafe939e06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
+  health: 3
   heartContainers: 3
   damage: 10
   shotSpeed: 10
@@ -170,12 +170,12 @@ MonoBehaviour:
   rb: {fileID: 0}
   movementSpeed: 8
   moveVelocity: {x: 0, y: 0}
-  canvas: {fileID: 0}
   halfHeartContainer: {fileID: 21300000, guid: 32c37fa389c69bc4996b283cafafe893, type: 3}
   emptyHeartContainer: {fileID: 21300000, guid: 6cfdc9795f3e541439614f59d24f7bf2,
     type: 3}
   heartSprite: {fileID: 21300000, guid: 70fd22843463a714aa3920a7bc73bd61, type: 3}
   heartContainers:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

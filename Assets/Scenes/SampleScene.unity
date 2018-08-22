@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1749,7 +1749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1988,7 +1988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2555,11 +2555,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
         type: 2}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1579064867}
-    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
-        type: 2}
       propertyPath: heartContainers.Array.data[0]
       value: 
       objectReference: {fileID: 1463691404}
@@ -2573,6 +2568,51 @@ Prefab:
       propertyPath: heartContainers.Array.data[2]
       value: 
       objectReference: {fileID: 1897397935}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[3]
+      value: 
+      objectReference: {fileID: 611728519}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[4]
+      value: 
+      objectReference: {fileID: 1701557152}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[5]
+      value: 
+      objectReference: {fileID: 1660121861}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[6]
+      value: 
+      objectReference: {fileID: 1738953302}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[7]
+      value: 
+      objectReference: {fileID: 1575192571}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[8]
+      value: 
+      objectReference: {fileID: 495141762}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[9]
+      value: 
+      objectReference: {fileID: 1438256480}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[10]
+      value: 
+      objectReference: {fileID: 192295202}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainers.Array.data[11]
+      value: 
+      objectReference: {fileID: 672995248}
     - target: {fileID: 1573615981504820, guid: f6d9cf8e1bddf04428962df774ceed8f, type: 2}
       propertyPath: m_Name
       value: Player
@@ -2628,7 +2668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
