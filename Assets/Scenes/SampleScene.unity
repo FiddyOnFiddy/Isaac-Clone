@@ -2613,6 +2613,66 @@ Prefab:
       propertyPath: heartContainers.Array.data[11]
       value: 
       objectReference: {fileID: 672995248}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1463691404}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[1]
+      value: 
+      objectReference: {fileID: 134607081}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1897397935}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[3]
+      value: 
+      objectReference: {fileID: 611728519}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[4]
+      value: 
+      objectReference: {fileID: 1701557152}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[5]
+      value: 
+      objectReference: {fileID: 1660121861}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[6]
+      value: 
+      objectReference: {fileID: 1738953302}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[7]
+      value: 
+      objectReference: {fileID: 1575192571}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[8]
+      value: 
+      objectReference: {fileID: 495141762}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[9]
+      value: 
+      objectReference: {fileID: 1438256480}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[10]
+      value: 
+      objectReference: {fileID: 192295202}
+    - target: {fileID: 114820339878208302, guid: f6d9cf8e1bddf04428962df774ceed8f,
+        type: 2}
+      propertyPath: heartContainerList.Array.data[11]
+      value: 
+      objectReference: {fileID: 672995248}
     - target: {fileID: 1573615981504820, guid: f6d9cf8e1bddf04428962df774ceed8f, type: 2}
       propertyPath: m_Name
       value: Player
@@ -2620,7 +2680,7 @@ Prefab:
     - target: {fileID: 114157627706390304, guid: f6d9cf8e1bddf04428962df774ceed8f,
         type: 2}
       propertyPath: health
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d9cf8e1bddf04428962df774ceed8f, type: 2}

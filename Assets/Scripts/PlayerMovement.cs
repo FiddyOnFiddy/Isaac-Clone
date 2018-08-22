@@ -45,10 +45,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void ShowHeartContainers()
     {
-        if(playerStats.health < prevHealth)
-        {
-            Debug.Log("Took Damage");
-        }
+        int fullHeart = playerStats.health / 2;
+        int halfHeart = playerStats.health % 2;
+        int emptyHeart = playerStats.heartContainers - fullHeart - halfHeart;
+
+        Debug.Log(fullHeart + " : " + halfHeart + " : " + emptyHeart);
 
         for (int i = 0; i < heartContainers.Length; i++)
         {
@@ -61,19 +62,21 @@ public class PlayerMovement : MonoBehaviour
                 heartContainers[i].enabled = false;
             }
 
-
-        /*    if (i < playerStats.health)
+           if (i < fullHeart)
             {
                 heartContainers[i].sprite = heartSprite;
-
             }
-            else
+
+           if(i + halfHeart >= fullHeart && halfHeart > 0)
             {
-                heartContainers[i].sprite = emptyHeartContainer;
-
+                heartContainers[fullHeart].sprite = halfHeartContainer ;
             }
-        */
+           if(i <= fullHeart + halfHeart + emptyHeart && emptyHeart > 0)
+            {
+                heartContainers[fullHeart].sprite = emptyHeartContainer;
+            }
         }
+    
     }
 
     private void FixedUpdate()
@@ -91,21 +94,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            prevHealth = playerStats.health;
             playerStats.health -= 1;
             Debug.Log("collided");
-
-            if (heartContainers[playerStats.health].sprite == heartSprite)
-            {
-                heartContainers[playerStats.health].sprite = halfHeartContainer;
-
-            }
-
-            if (heartContainers[prevHealth].sprite == halfHeartContainer)
-            {
-                heartContainers[prevHealth].sprite = emptyHeartContainer;
-
-            }
 
         }
 
@@ -117,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "HpUp")
         {
             playerStats.heartContainers += 1;
-            playerStats.health += 1;
+            playerStats.health += 2;
         }
 
         if (collision.tag == "HpDown")
