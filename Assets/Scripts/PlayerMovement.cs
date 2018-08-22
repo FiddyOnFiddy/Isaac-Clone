@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerStatsScript playerStats;
 
+    public int prevHealth;
+
 
     // Use this for initialization
     void Start()
@@ -43,18 +45,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void ShowHeartContainers()
     {
+        if(playerStats.health < prevHealth)
+        {
+            Debug.Log("Took Damage");
+        }
+
         for (int i = 0; i < heartContainers.Length; i++)
         {
-            if (i < playerStats.health)
-            {
-                heartContainers[i].sprite = heartSprite;
-            }
-            else
-            {
-                heartContainers[i].sprite = emptyHeartContainer;
-            }
-
-
             if (i < playerStats.heartContainers)
             {
                 heartContainers[i].enabled = true;
@@ -63,6 +60,19 @@ public class PlayerMovement : MonoBehaviour
             {
                 heartContainers[i].enabled = false;
             }
+
+
+        /*    if (i < playerStats.health)
+            {
+                heartContainers[i].sprite = heartSprite;
+
+            }
+            else
+            {
+                heartContainers[i].sprite = emptyHeartContainer;
+
+            }
+        */
         }
     }
 
@@ -81,8 +91,22 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
+            prevHealth = playerStats.health;
             playerStats.health -= 1;
             Debug.Log("collided");
+
+            if (heartContainers[playerStats.health].sprite == heartSprite)
+            {
+                heartContainers[playerStats.health].sprite = halfHeartContainer;
+
+            }
+
+            if (heartContainers[prevHealth].sprite == halfHeartContainer)
+            {
+                heartContainers[prevHealth].sprite = emptyHeartContainer;
+
+            }
+
         }
 
         if (collision.tag == "Heart")
