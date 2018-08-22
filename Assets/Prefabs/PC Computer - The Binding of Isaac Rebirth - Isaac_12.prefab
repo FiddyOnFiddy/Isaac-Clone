@@ -94,7 +94,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61403006234994706
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 6
-  heartContainers: 6
+  heartContainers: 3
   damage: 10
   shotSpeed: 10
   tearDelay: 10
@@ -172,8 +172,22 @@ MonoBehaviour:
   moveVelocity: {x: 0, y: 0}
   canvas: {fileID: 0}
   halfHeartContainer: {fileID: 21300000, guid: 32c37fa389c69bc4996b283cafafe893, type: 3}
-  heartContainer3: {fileID: 0}
-  heartContainers: []
+  emptyHeartContainer: {fileID: 21300000, guid: 6cfdc9795f3e541439614f59d24f7bf2,
+    type: 3}
+  heartSprite: {fileID: 21300000, guid: 70fd22843463a714aa3920a7bc73bd61, type: 3}
+  heartContainers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  playerStats: {fileID: 0}
 --- !u!212 &212332439557832664
 SpriteRenderer:
   m_ObjectHideFlags: 1
