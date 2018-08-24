@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public Vector2 moveVelocity;
 
+    public Canvas canvas;
+
     public Sprite halfHeartContainer;
     public Sprite emptyHeartContainer;
     public Sprite heartSprite;
@@ -53,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
         for (int i = 0; i < heartContainers.Length; i++)
         {
+            
             if (i < playerStats.heartContainers)
             {
                 heartContainers[i].enabled = true;
